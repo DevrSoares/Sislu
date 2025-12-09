@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <div id="Container-full" class="py-2" style="background-color: #fe8a19;">
+        <div class="container p-0">
+            <nav class="navbar navbar-expand-lg p-0">
+                <div class="container-fluid cNav">
+
+
+                    <a class="navbar-brand text-white fw-bold" href="sisalu.html">Sisalu</a>
+
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav" id="ListContato">
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white btnav" href="#">
+                                    <i class="fa-solid fa-arrow-right-to-bracket"></i> Login
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white btnav" href="#">Vídeos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white btnav" href="Contato.html">Contato</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white btnav" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white " href="#" role="button"
+                                    data-bs-toggle="dropdown">
+                                    Módulos
+                                </a>
+                                <ul class="dropdown-menu" style="background-color:#fe8a19;">
+                                    <li><a class="dropdown-item text-white" href="Academico.html">Acadêmico</a></li>
+                                    <li><a class="dropdown-item text-white" href="Contas-a-Receber.html">Contas a
+                                            Receber</a></li>
+                                    <li><a class="dropdown-item text-white" href="Contas-a-Pagar.html">Contas a
+                                            Pagar</a></li>
+                                    <li><a class="dropdown-item text-white" href="boleto-online.html">Boleto online</a>
+                                    </li>
+                                    <li><a class="dropdown-item text-white" href="Tutor-wbe.html">Tutor Web</a></li>
+                                    <li><a class="dropdown-item text-white" href="Venda.html">Vendas</a></li>
+                                    <li><a class="dropdown-item text-white" href="Biblioteca.html">Biblioteca</a></li>
+                                    <li><a class="dropdown-item text-white" href="estoque.html">Estoque</a></li>
+                                    <li><a class="dropdown-item text-white" href="Catraca.html">Catraca</a></li>
+                                    <li><a class="dropdown-item text-white" href="Baby.html">Sisalu Baby</a></li>
+                                    <li><a class="dropdown-item text-white" href="sms.html">SMS</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container p-5" id="bodyText">
+        <div class="container texto mt-5">
+            <h5 id="title">Agendar apresentação e solicitar proposta</h5>
+            </h5>
+            <form method="POST" action="https://sisalu.com.br/api/interno/captacao/incluir" class="cBody">
+                <div class="form-grup mb-2">
+                    <label for="nome" id="ListContato">Nome</label>
+                    <input type="text" class="form-control form-control-lg rounded-pill shadow-sm" id="nome" name="nome"
+                        placeholder="Informe seu Nome" required="">
+                </div>
+                <div class="form-grup mb-2">
+                    <label for="escola" id="ListContato">Escola</label>
+                    <input type="text" class="form-control form-control-lg rounded-pill shadow-sm" id="escola"
+                        name="escola" placeholder="Informe o Nome da Escola" required="">
+                </div>
+                <div class="form-grup mb-2">
+                    <label for="telefone" id="ListContato">Telefone</label>
+                    <input type="tel" class="form-control form-control-lg rounded-pill shadow-sm" id="telefone"
+                        name="telefone" placeholder="(xx)xxxx-xxxx" required="">
+                </div>
+                <div class="form-grup mb-2">
+                    <label for="email" id="ListContato">E-mail</label>
+                    <input type="email" class="form-control form-control-lg rounded-pill shadow-sm" id="email"
+                        name="email" placeholder="seu@email.com" required="">
+                </div>
+                <div class="text-center mb-3">
+                    <em>Ao enviar este formulário, você concorda com a nossa</em>
+                    <a href="politica-de-privacidade" target="_blank">Política de Privacidade</a>.
+                </div>
+                <div class="text-center mb-4" >
+                    <button type="submit" class="btn btn-success btn-lg px-5 text-white" style="background-color: green;">Solicitar contato</button>
+                </div>
+
+            </form>
+
+            <div class="text-center">
+                <p><strong>Se preferir</strong></p>
+                <p>Envie um e-mail para: <a href="mailto:">info@sisalu.com.br</a></p>
+                <p>Ou ligue para (11) 5072-9737</p>
+            </div>
+        </div>
+    </div>
+
+       <div style="background-color: #fe8a19;">
+        <div class="container p-4" style="background-color: #fe8a19;">
+            <nav class="navbar navbar-expand-lg p-0 m-0">
+                <a class="navbar-brand text-white fw-bold" href="#">
+                    <strong><em>Sua Escola Pronta pra Crescer</em></strong>
+                </a>
+
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Parcerias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Notícias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Ação social</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
