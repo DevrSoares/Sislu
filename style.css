@@ -46,11 +46,16 @@
 
 #subTitle{
      font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     font-weight: 900;
     margin-bottom: 30px;
     position: relative;
 
+}
+
+#subTitle strong {
+    font-weight: 600;
+    color: #fe8a19;
 }
 
 #title strong {
@@ -66,39 +71,37 @@
     background-color: #FCFCFC;
     border-radius: 10px;
     padding: 2%;
-      
+
+}
+
+.btn {
+    background-color: #fe8a19;
+    border: 0px;
+    margin-top: 15%;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000000;
+
+}
+.btn {
+    background-color: #fe8a19;
+    border: 0px;
+    margin-top: 15%;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000000;
    
-
-}
-
-.btn {
-    background-color: #fe8a19;
-    border: 0px;
-    margin-top: 15%;
-    font-weight: 600;
-    text-decoration: none;
-    color: #000000;
-
-}
-.btn {
-    background-color: #fe8a19;
-    border: 0px;
-    margin-top: 15%;
-    font-weight: 600;
-    text-decoration: none;
-    color: #000000;
-    animation: shake 0.5s infinite;
 }
 
 
 .btn:hover {
     background-color: #ff9d3b;
     border: 0;
-    position: relative;
+  
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     transform: translateY(-5px);
     transition: 0.8s;
-    animation: bounce 1.2s infinite;
+   
 }
 .btn-vibra{
         animation: vibra 0.9s infinite;
@@ -119,7 +122,7 @@
 }
 
 #line {
-    text-decoration: underline;
+ 
     text-decoration-color: #000000;
     text-decoration-thickness: 0.0002rem;
     text-underline-offset: 6px;
@@ -148,7 +151,12 @@
     line-height: 1.7;
     font-size: 1.05rem;
 }
-
+#textoCard{
+    font-size: 1.9rem;
+    font-weight: 500;
+    padding: 2%;
+  
+}
 
 .blocoCard {
     margin-top: 8%;
@@ -186,9 +194,11 @@
 #ListContato{
    
     color: #000000;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     font-size: large;
+    list-style: none;
+
 
 }
 
@@ -214,8 +224,18 @@
     transition: 0.4s;
 }
 
-/* Card ativo = maior e mais visível */
+
 #carouselModulos .carousel-item.active .card {
     transform: scale(1);
     opacity: 1;
+}
+
+.btn-top-fixed {
+    position: fixed;
+    top: -290px;
+    right: 50px;
+    z-index: 9999;
+    padding: 15px 18px;
+    border-radius: 50px;
+    margin-bottom: 99%;
 }

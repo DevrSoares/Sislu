@@ -16,14 +16,12 @@
 </head>
 
 <body>
-    <div id="Container-full" class="py-2" style="background-color: #fe8a19;">
+    <div id="Container-full py-2" class="py-2" style="background-color: #161616;">
         <div class="container p-0">
             <nav class="navbar navbar-expand-lg p-0">
-                <div class="container-fluid cNav">
+                <div class="container-fluid cNav py-2 m-2 w-150" style="background-color:#fe8a19; border-radius: 25px;">
 
-
-                    <a class="navbar-brand text-white fw-bold" href="sisalu.html">Sisalu</a>
-
+                    <a class="navbar-brand text-white fw-bold ms-3 fs-2" href="sisalu.html">Sisalu</a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -33,7 +31,7 @@
 
 
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                        <ul class="navbar-nav" id="ListContato">
+                        <ul class="navbar-nav fs-5" id="ListContato">
 
                             <li class="nav-item">
                                 <a class="nav-link text-white btnav" href="#">
@@ -81,50 +79,66 @@
                 </div>
             </nav>
         </div>
+
     </div>
 
-    <div class="container p-5" id="bodyText">
-        <div class="container texto mt-5">
-            <h5 id="title">Agendar apresentação e solicitar proposta</h5>
-            </h5>
-            <form method="POST" action="https://sisalu.com.br/api/interno/captacao/incluir" class="cBody">
-                <div class="form-grup mb-2">
-                    <label for="nome" id="ListContato">Nome</label>
-                    <input type="text" class="form-control form-control-lg rounded-pill shadow-sm" id="nome" name="nome"
-                        placeholder="Informe seu Nome" required="">
-                </div>
-                <div class="form-grup mb-2">
-                    <label for="escola" id="ListContato">Escola</label>
-                    <input type="text" class="form-control form-control-lg rounded-pill shadow-sm" id="escola"
-                        name="escola" placeholder="Informe o Nome da Escola" required="">
-                </div>
-                <div class="form-grup mb-2">
-                    <label for="telefone" id="ListContato">Telefone</label>
-                    <input type="tel" class="form-control form-control-lg rounded-pill shadow-sm" id="telefone"
-                        name="telefone" placeholder="(xx)xxxx-xxxx" required="">
-                </div>
-                <div class="form-grup mb-2">
-                    <label for="email" id="ListContato">E-mail</label>
-                    <input type="email" class="form-control form-control-lg rounded-pill shadow-sm" id="email"
-                        name="email" placeholder="seu@email.com" required="">
-                </div>
-                <div class="text-center mb-3">
-                    <em>Ao enviar este formulário, você concorda com a nossa</em>
-                    <a href="politica-de-privacidade" target="_blank">Política de Privacidade</a>.
-                </div>
-                <div class="text-center mb-4" >
-                    <button type="submit" class="btn btn-success btn-lg px-5 text-white" style="background-color: green;">Solicitar contato</button>
-                </div>
+    <div class="container py-4" id="bodyText">
 
-            </form>
+    <div class="texto mt-4">
 
-            <div class="text-center">
-                <p><strong>Se preferir</strong></p>
-                <p>Envie um e-mail para: <a href="mailto:">info@sisalu.com.br</a></p>
-                <p>Ou ligue para (11) 5072-9737</p>
+        <h5 id="title" class="text-center mb-4 fs-3">
+            Agendar apresentação e solicitar proposta
+        </h5>
+
+        <form method="POST" action="https://sisalu.com.br/api/interno/captacao/incluir" class="cBody">
+
+            <div class="form-group mb-3">
+                <label for="nome" id="ListContato">Nome</label>
+                <input type="text" class="form-control form-control-lg rounded-pill shadow-sm"
+                    id="nome" name="nome" placeholder="Informe seu Nome" required>
             </div>
+
+            <div class="form-group mb-3">
+                <label for="escola" id="ListContato">Escola</label>
+                <input type="text" class="form-control form-control-lg rounded-pill shadow-sm"
+                    id="escola" name="escola" placeholder="Informe o Nome da Escola" required>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="telefone" id="ListContato">Telefone</label>
+                <input type="tel" class="form-control form-control-lg rounded-pill shadow-sm"
+                    id="telefone" name="telefone" placeholder="(xx)xxxx-xxxx" required>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="email" id="ListContacto">E-mail</label>
+                <input type="email" class="form-control form-control-lg rounded-pill shadow-sm"
+                    id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+
+            <div class="text-center mb-3 px-3">
+                <em>Ao enviar este formulário, você concorda com a nossa</em><br>
+                <a href="politica-de-privacidade" target="_blank">Política de Privacidade</a>.
+            </div>
+
+            <div class="text-center mb-4">
+                <button type="submit" class="btn btn-success btn-lg px-5 text-white rounded-pill shadow-sm"
+                    style="background-color: green;">
+                    Solicitar contato
+                </button>
+            </div>
+
+        </form>
+
+        <div class="text-center mt-4">
+            <p><strong>Se preferir</strong></p>
+            <p>Envie um e-mail para: <a href="mailto:info@sisalu.com.br">info@sisalu.com.br</a></p>
+            <p>Ou ligue para (11) 5072-9737</p>
         </div>
+
     </div>
+</div>
+
 
        <div style="background-color: #fe8a19;">
         <div class="container p-4" style="background-color: #fe8a19;">
