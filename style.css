@@ -80,17 +80,11 @@
     margin-top: 15%;
     font-weight: 600;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
 
 }
-.btn {
-    background-color: #fe8a19;
-    border: 0px;
-    margin-top: 15%;
-    font-weight: 600;
-    text-decoration: none;
-    color: #000000;
-   
+#linkPass{
+    color: white;
 }
 
 
@@ -105,6 +99,7 @@
 }
 .btn-vibra{
         animation: vibra 0.9s infinite;
+        color: #ffffff;
 
 }
 
@@ -238,4 +233,35 @@
     padding: 15px 18px;
     border-radius: 50px;
     margin-bottom: 99%;
+}
+
+#msg{
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    width: 400px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+ 
+}
+#msgAberta{
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    width: 400px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+#msg h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#horas {
+    font-size: 11px;
+    color: #2c2c2c;
 }
